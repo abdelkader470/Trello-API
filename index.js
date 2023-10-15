@@ -10,7 +10,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(userRoutes);
 app.use(taskRoutes);
-const port = 8000;
+const port = process.env.PORT || 3000;
 
 connection();
 app.get("/", (req, res) => res.send("Hello World!"));

@@ -13,7 +13,7 @@ const signUp = async (req, res) => {
         ...req.body,
         password: hashedPassword,
       });
-      res.status(201).json({ addedUser });
+      res.status(201).json({ Msg: "success", addedUser });
     }
   } catch (error) {
     res.status(400).json({ Msg: "error", error });

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const connection = () => {
   mongoose
-    .connect("mongodb://127.0.0.1:27017/trelloApp")
+    .connect("mongodb+srv://sarahaa:sarahaa@cluster0.c4t5fu8.mongodb.net/")
     .then(() => console.log("DB connected"))
     .catch((err) => {
       console.log(err);
